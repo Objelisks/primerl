@@ -19,7 +19,7 @@ var Game = {
 
 		this.effects = new Effects();
 
-		var levelType = LavaLevel;
+		var levelType = BioLevel;
 		this.level = new levelType();
 		this.level.generate();
 

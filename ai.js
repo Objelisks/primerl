@@ -23,11 +23,12 @@ AI.Crawler = function() {
 		var newPos = [this.x + moveDir[0], this.y + moveDir[1]];
 		if(Game.isOpen(newPos[0], newPos[1])) {
 			bestPos = newPos;	
+			break;
 		} else if(bestPos != null) {
 			break;
 		}
 
-		currentDir = (currentDir + 1).mod(8);
+		currentDir = (currentDir - 1).mod(8);
 	} while(currentDir != this.lastDir);
 
 	if(bestPos != null) {

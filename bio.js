@@ -41,8 +41,8 @@ var BioLevel = function() {
 BioLevel.extend(Level);
 
 BioLevel.prototype.generate = function() {
-	var digger = new  ROT.Map.Cellular(80, 25);
-	digger.randomize(0.4);
+	var digger = new  ROT.Map.Uniform(80, 22);
+	//digger.randomize(0.4);
 	this.freeCells = [];
 
 	var floor = [".", "'", "\""];
@@ -54,6 +54,7 @@ BioLevel.prototype.generate = function() {
 			this.map[key] = {
 				solid: false,
 				ch: floor.random(),
+				color: this.ambient,
 				heat: 50,
 				things: []
 			}
@@ -61,6 +62,7 @@ BioLevel.prototype.generate = function() {
 			this.map[key] = {
 				solid: true,
 				ch: " ",
+				color: "black",
 				heat: 0,
 				things: []
 			}

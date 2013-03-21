@@ -31,7 +31,7 @@ var Shriekbat = {
 		"\\----------/"
 		]
 	}
-},
+}
 
 var Magmoor = {
 	ch: "M",
