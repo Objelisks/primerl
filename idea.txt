@@ -1,0 +1,158 @@
+PRIMERL
+THE GAMENING
+
+A 7drl production
+By Tim (Rather)
+
+
+@-------[m]
+
+  [b]
+  /
+ |
+ /
+@
+
+Key elements
+
+DAWN OF THE FINAL DAY
+link to overworld:
+lava level
+	hot things
+	bunch of enemies
+ice level?
+doors
+
+
+
+SCAN LOGS
+
+
+LEVEL GENERATOR
+Areas:
+	Overworld
+	Ice
+	Lava
+	Bio
+	Boss (endgame)
+
+Any other than overworld can have pirate bases
+
+Overworld:
+	Open areas
+	Round edges
+	Caves
+	Water
+
+Ice:
+	Tunnels
+	Platforms
+	Ice walls
+
+Lava:
+	Lava pits
+	Caves
+	Rocks
+
+Bio:
+	Glowing plants
+	Bridges
+	Fauna
+
+Pirate:
+	Dense
+	Rectangular
+	Lasers
+
+Boss:
+	Weird
+	Elements from each
+
+ENEMY DESIGN
+
+
+COLORS
+steel blue, grey, neon blue
+army green, grey, neon green
+dark red, maroon, off red
+
+
+COMBAT
+
+move move move
+press t to lock on or switch target
+press f while locked to shoot or continue
+d to cancel target
+s to scan
+
+TARGETTING
+	get all enemies within visual range use LOS algorithm
+	sort by angle
+	start with enemy directly in front of player by last move
+	go clockwise
+
+
+VISION
+	don't show lighted areas that are outside player vision
+
+
+PROJECTILES
+	EFFECT
+
+
+
+
+BUGS
+
+
+
+OUT OF SCOPE
+	morphball/related abilities
+	puzzles?
+	more than one boss fight
+	status effects (fire, stun, slow, frozen, electric)
+
+scans
+
+fog, using background colors/perlin noise
+
+upgrades
+
+stealth?
+jump
+charge
+missile
+ice
+fire
+
+move, shoot, scan
+
+hud
+health
+ammo
+danger
+items
+
+map design
+small irregular rectangular rooms
+colored based on visited
+dense clustering
+
+enemy types
+collision
+	charge
+	wander
+	swarm
+	static
+ranged
+	dumb
+	smart
+	homing
+	shot
+
+accuracy
+damage
+tactics
+patterns
+
+all enemies: patterns
